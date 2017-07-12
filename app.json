@@ -1,1 +1,22 @@
-app.json
+{
+  "name": "Firebase",
+  "description": "Flask Firebase example",
+
+  "env": {
+    "HEROKU_APP_NAME": {
+      "required": true
+    },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "papertrail"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
